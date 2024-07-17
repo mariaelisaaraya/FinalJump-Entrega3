@@ -67,7 +67,7 @@ La Pre-entrega 3 requerirá que elabores un proyecto utilizando Node.js y MySQL,
 ## Publicación del Proyecto
 
 ### 1. Repositorio en GitHub:
-y 
+
 - Crea un repositorio en **GitHub**.
 - Publica los siguientes elementos:
   - La base de datos **trailerflix** con sus tablas y datos cargados.
@@ -83,7 +83,7 @@ y
 
 ## Espacio de Consultas
 
-Recuerda que en este ejercicio es necesario:
+Recuerden que en este ejercicio es necesario:
 
 - Diseñar un modelo relacional de base de datos utilizando la información del archivo trailerflix.json.
 - Crear al menos 6 tablas relacionales y migrar los datos del archivo JSON.
