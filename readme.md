@@ -6,7 +6,7 @@ La Pre-entrega 3 requerirá que elabores un proyecto utilizando Node.js y MySQL,
 
 ### 1. Análisis del archivo trailerflix.json:
 
-- Revisa el contenido del archivo trailerflix.json que se utilizó en las primeras clases.
+- Revisa el contenido del archivo trailerflix.json que se utilizó en las primera entrega.
 - Analiza todas sus propiedades para identificar las entidades y sus relaciones.
 
 ### 2. Diseño de la base de datos:
@@ -32,7 +32,7 @@ La Pre-entrega 3 requerirá que elabores un proyecto utilizando Node.js y MySQL,
 ## Migración de Datos
 
 ### 1. Preparación de los datos:
-- Utiliza una herramienta de inteligencia artificial sugerida para ayudarte a separar y preparar los datos del archivo JSON.
+- Si queres podes utilizar una herramienta de inteligencia artificial para ayudarte a separar y preparar los datos del archivo JSON.
 - Asegúrate de tener todo listo para una rápida inserción en MySQL.
 
 ## Desarrollo del Proyecto Node.js
@@ -45,7 +45,7 @@ La Pre-entrega 3 requerirá que elabores un proyecto utilizando Node.js y MySQL,
 ### 2. Configuración de la conexión a MySQL:
 
 - Crea un archivo .env para definir el host, usuario y contraseña de la base de datos.
-- Prueba la conexión a MySQL enviando un mensaje a la consola (Terminal) de Node.js.
+- Prueba la conexión a MySQL enviando un mensaje a la consola, terminal, de Node.js.
 
 ### 3. Creación de modelos y endpoints:
 
@@ -61,13 +61,13 @@ La Pre-entrega 3 requerirá que elabores un proyecto utilizando Node.js y MySQL,
 
 ### 4. Documentación de endpoints:
 
-- Realiza la documentación explicando cómo utilizar los endpoints existentes.
+- Realiza la documentación explicando cómo utilizar los endpoints existentes y lo que consideres necesario.
 - La documentación debe estar en formato **Markdown** y ser clara y detallada.
 
 ## Publicación del Proyecto
 
 ### 1. Repositorio en GitHub:
-
+y 
 - Crea un repositorio en **GitHub**.
 - Publica los siguientes elementos:
   - La base de datos **trailerflix** con sus tablas y datos cargados.
@@ -89,4 +89,4 @@ Recuerda que en este ejercicio es necesario:
 - Crear al menos 6 tablas relacionales y migrar los datos del archivo JSON.
 - Crear los endpoints necesarios y documentarlos adecuadamente.
 
-**Aprovecha el tiempo disponible para avanzar en estos pasos y evitar retrasos en la entrega final. Si tienes alguna duda, no dudes en consultarnos en clase.**
+**Aprovecha el tiempo disponible en clase para avanzar en estos pasos y evitar retrasos en la entrega final.**
