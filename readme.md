@@ -1,6 +1,6 @@
-# Pre-Entrega 3
+# Pre-Entrega 3 🎯
 
-La Pre-entrega 3 requerirá que elabores un proyecto utilizando Node.js y MySQL, acompañado de una documentación adecuada. A continuación, se detallan los pasos a seguir:
+La Pre-entrega 3 requerirá que elabores un proyecto utilizando Node.js y MySQL, acompañado de una documentación adecuada. A continuación, se detalla una **🚦Guía** a seguir:
 
 ## Diseño del Modelo de Datos
 
@@ -75,7 +75,7 @@ y
   - El código del proyecto **Node.js.**
   - La documentación en formato **Markdown.**
     
-## Presentación en la Clase 32
+## Presentación en la Clase 32 🤝 
 
 ### 1. Presentación del Proyecto:
 - Cada grupo tendrá 5 minutos para presentar su proyecto durante la clase 32.
