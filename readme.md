@@ -1,6 +1,6 @@
 # Pre-Entrega 3 🎯
 
-La Pre-entrega 3 requerirá que elabores un proyecto utilizando Node.js y MySQL, acompañado de una documentación adecuada. A continuación, se detalla una **🚦Guía** a seguir:
+La Pre-entrega 3 requerirá que elabores con tu equipo un proyecto utilizando Node.js y MySQL, acompañado de una documentación adecuada. A continuación, se detalla una **🚦Guía** a seguir:
 
 ## Diseño del Modelo de Datos
 
