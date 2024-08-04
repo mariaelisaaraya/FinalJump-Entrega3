@@ -1,3 +1,4 @@
+### Grupo 8 - Integrantes: Gabriela Espinach Ros
 # Documentación de la API TrailerFlix
 
 ## Tecnologías Utilizadas
