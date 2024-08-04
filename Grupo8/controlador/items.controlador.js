@@ -7,6 +7,7 @@ const Tags = db.Tags
 const sequelize = require('../database/db.js');
 const { Op } = require('sequelize');
 
+// Include para campos completos de items
 const itemsCompletos = [
    {
    model: Genero,
@@ -23,6 +24,7 @@ const itemsCompletos = [
  } ]
 
 
+
 // Ver todos los items
 exports.todosLosItems= (req, res) => {
   Items.findAll({include:itemsCompletos})
@@ -31,7 +33,7 @@ exports.todosLosItems= (req, res) => {
     })
     .catch(err => {
       res.send(500).send({
-        message: err.message || "Ocurrió un error al realizar la consulta."
+        message: err.message || `Ocurrió un error al realizar la consulta.- ${err}`
       });
     });
 };
@@ -46,7 +48,7 @@ exports.buscarPorId = (req, res) => {
     })
     .catch(err => {
       res.status(500).send({
-        message: `Error al buscar el item con id = ${id}`
+        message: `Error al buscar el item con id = ${id}- ${err}`
       });
     });
 };
@@ -56,6 +58,7 @@ exports.buscarPorId = (req, res) => {
 // buscar por titulo
 
 exports.buscarPorTitutlo = async (req,res) =>{
+ try{
   const titulos = await Items.findAll({
     where: {
       titulo: {
@@ -64,14 +67,19 @@ exports.buscarPorTitutlo = async (req,res) =>{
     },
     include: itemsCompletos  
 })
-
-res.send(darFormato(titulos))
+  res.status(200).send(darFormato(titulos))
+}catch(err){
+  res.status(500).send({
+    message: `Error al buscar el item con titulo = ${req.params.titulo}- ${err}`
+  });
+  }
 }
 
 
 // buscar items por actor
 
 exports.buscarPorActor = async (req, res) => {
+  try{
   const actores = await Actores.findAll({
     where: {
       nombre: {
@@ -89,11 +97,12 @@ exports.buscarPorActor = async (req, res) => {
     actor:actor.nombre,
     Items: darFormato(actor.Items)
     }))
-
-
-
-
     res.status(200).json(respuesta); 
+  }catch(err){
+    res.status(500).send({
+      message: `Error al buscar el item con actor = ${req.params.nombre} - ${err}`
+    });
+  }
 };
 
 
@@ -101,6 +110,7 @@ exports.buscarPorActor = async (req, res) => {
 //Buscar por categoria
 
 exports.buscarPorCategoria =async (req,res)=>{
+  try{
   const titulos = await Items.findAll({
     where: {
       categoria: `${req.params.cat}`
@@ -109,11 +119,17 @@ exports.buscarPorCategoria =async (req,res)=>{
 })
 
 res.send(darFormato(titulos))
+  }catch(err){
+    res.status(500).send({
+      message: `Error al buscar el item con categoria = ${req.params.categoria} - ${err}`
+    });
+  }
 }
 
 //Buscar por cualquier criterio
 
 exports.buscar = async (req,res)=>{
+  try{
 const id = parseInt(req.query.id)
 const titulo = req.query.titulo || ""
 const categoria = req.query.categoria || ""
@@ -159,7 +175,15 @@ const titulos = await Items.findAll({
 })
 
 res.send(darFormato(titulos))
+  }catch(err){
+    res.status(500).send({
+      message: `Error al buscar - ${err}`
+    });
+
+  }
 }
+
+
 
 
 // Dar formato a la lista de items
